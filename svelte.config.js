@@ -8,8 +8,19 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+
+		vite: () => ({
+			// Configuration to enable hot reload on Svelte.
+			// The "usePolling" is enabled, so it can work
+			// with WSL2 on windows.
+			server: {
+				watch: {
+					usePolling: true
+				}
+			}
+		})
 	}
-};
+}
 
 export default config;
