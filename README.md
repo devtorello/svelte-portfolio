@@ -1,5 +1,5 @@
 # My Portfolio 🚧
-Hey, there! This is my portfolio site and it is still under development. :)
+Hey, there! This is my portfolio site and it is still under development. It is **not** the final version. :)
 
 ## How to run this project?
 After you cloned this repo, you will need to follow the following steps...
