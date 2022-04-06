@@ -60,7 +60,7 @@
         padding: 1rem;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1280px) {
         .desktop-menu {
             display: none;
         }
