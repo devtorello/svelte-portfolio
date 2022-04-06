@@ -1,5 +1,5 @@
 # My Portfolio 🚧
-Hey, there! This is my portfolio site and it is still under development. :)
+Hey, there! This is my portfolio site and it is still under development. It is **not** the final version. :)
 
 ## How to run this project?
 After you cloned this repo, you will need to follow the following steps...
@@ -33,3 +33,6 @@ npm run preview
 ```
 
 You need to keep in mind that, if you plan to deploy this app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Useful Links Utilized During the Project
+- 💻 [Screen Sizes](https://screensiz.es/monitor).
