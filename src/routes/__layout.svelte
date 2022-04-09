@@ -6,13 +6,13 @@
 <header class="menu">
     <h1 class="menu-title">devtorello</h1>
     <nav>
-        <ul class="desktop-menu">
-            <li><a href="/">home</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="/skills">skills</a></li>
-            <li><a href="/posts">posts</a></li>
-            <li><a href="/projects">projects</a></li>
-            <li><a href="/contact">contact</a></li>
+        <ul class="desktop_menu">
+            <li><a href="/"><span class="desktop_menu__contrast">01.</span> home</a></li>
+            <li><a href="/about"><span class="desktop_menu__contrast">02.</span> about</a></li>
+            <li><a href="/skills"><span class="desktop_menu__contrast">03.</span> skills</a></li>
+            <li><a href="/posts"><span class="desktop_menu__contrast">04.</span> posts</a></li>
+            <li><a href="/projects"><span class="desktop_menu__contrast">05.</span> projects</a></li>
+            <li><a href="/contact"><span class="desktop_menu__contrast">06.</span> contact</a></li>
         </ul>
     </nav>
     <button class="btn-mobile" on:click={toggleMobileMenu}>menu</button>
@@ -33,8 +33,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 
     :global(:root) {
-        --background-color: #000B0D;
-        --primary-color: #A52502;
+        --background-color: #0D0D0D;
+        --primary-color: #3E4759;
+        --secondary-color: #69788C;
+        --terciary-color: #949BA6;
+        --detail-color: #F2695C;
         --default-color: #F2F2F2;
     }
 
@@ -61,7 +64,7 @@
     }
 
     @media (max-width: 1280px) {
-        .desktop-menu {
+        .desktop_menu {
             display: none;
         }
 
@@ -106,13 +109,17 @@
             display: none;
         }
 
+        .desktop_menu__contrast {
+            color: var(--secondary-color);
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
             align-items: center;
-            font-size: 18px;
+            font-size: 16px;
         }
     
         li {
@@ -120,27 +127,12 @@
         }
     
         a {
-            position: relative;
             text-decoration: none;
             color: var(--default-color);
         }
-    
-        a::before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary-color);
-            transform: scaleX(0);
-            transform-origin: top left;
-            transition: transform 0.3s ease;
-        }
-    
-        a:hover::before {
-            transform: scale(1);
+
+        a:hover {
+            color: var(--secondary-color);
         }
     }
 </style>
