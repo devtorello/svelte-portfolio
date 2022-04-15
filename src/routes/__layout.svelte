@@ -1,4 +1,6 @@
 <script lang="ts">
+    import "$styles/routes/__layout.css"
+
     let mobileMenu = false
     const toggleMobileMenu = () => mobileMenu = !mobileMenu
 </script>
@@ -49,109 +51,5 @@
         background-color: var(--background-color);
         color: var(--default-color);
         font-family: 'Poppins', sans-serif;
-    }
-
-    .menu {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu-title {
-        margin: 0;
-        padding: 1rem;
-    }
-
-    @media (max-width: 1280px) {
-        .desktop_menu {
-            display: none;
-        }
-
-        .btn-mobile {
-            margin: 1rem;
-            width: 100px;
-            height: 100%;
-            padding: 0.5rem;
-            background: transparent;
-            border: 1px solid var(--primary-color);
-            border-radius: 10px;
-            color: var(--primary-color);
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .open {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            width: 100%;
-            height: calc(100vh - 80px);
-            background: var(--background-color);
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile-menu li {
-            margin-bottom: 10px;
-        }
-        
-        ul {
-            list-style: none;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul a {
-            text-decoration: none;
-            color: var(--default-color);
-        }
-
-        li {
-            margin: 1rem;
-        }
-    }
-
-    @media (min-width: 1280px) {
-        .btn-mobile {
-            display: none;
-        }
-        
-        .mobile-menu {
-            display: none;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-        }
-    
-        li {
-            padding: 1rem 3rem;
-        }
-
-        .menu__contrast {
-            color: var(--secondary-color);
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--default-color);
-        }
-
-        a:hover {
-            color: var(--secondary-color);
-        }
-    }
-
-    .menu__contrast {
-        color: var(--secondary-color);
     }
 </style>
