@@ -5,9 +5,10 @@
 <script lang="ts">
     import { socialMedia } from '$lib/config/env'
     import { logo } from '$assets/index'
+    import "$styles/routes/main.css"
 </script>
 
-<main class="main">
+<main>
     <section class="social_media">
         <a href={socialMedia.github} target="_blank" alt="Github Link"><img src={logo.github} alt="Github Logo"></a>
         <a href={socialMedia.instagram} target="_blank" alt="Instagram Link"><img src={logo.instagram} alt="Instagram Logo"></a>
@@ -27,110 +28,3 @@
         </div>
     </section>
 </main>
-
-<style>
-    @media (max-width: 1280px) {
-        .main {
-            width: 100%;
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-
-        .picture {
-            max-width: 20rem;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        .presentation {
-            text-align: right;
-            margin: 2.5rem 0rem;
-        }
-
-        .presentation__title {
-            font-size: 20px;
-        }
-
-        .presentation__subtitle {
-            font-size: 14px;
-        }
-
-        .social_media {
-            margin: 2.5rem 0rem 0rem 0rem;
-            text-align: center;
-        }
-
-        a {
-            height: 100%;
-            padding: 0rem 1rem;
-        }
-    }
-
-    @media (min-width: 1280px) {
-        .main {
-            width: 100%;
-            height: calc(100vh - 80px);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .social_media {
-            margin: 0rem 5rem;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        .social_media::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 25rem;
-            margin: 0px auto;
-            background-color: var(--default-color);
-        }
-
-        a {
-            margin: 1rem;
-            padding: 0.5rem;
-            border-radius: 15px;
-        }
-
-        .picture {
-            width: 45rem;
-        }
-
-        .presentation {
-            text-align: right;
-            margin: 0rem 5rem;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        .presentation__title {
-            font-size: 60px;
-            font-weight: 700;
-        }
-
-        .presentation__subtitle {
-            font-size: 40px;
-        }
-    }
-
-    .presentation__title__contrast {
-        color: var(--detail-color);
-    }
-
-    .presentation__subtitle__contrast {
-        color: var(--primary-color);
-    }
-</style>

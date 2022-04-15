@@ -22,7 +22,9 @@ const config = {
 				// Add a alias to the absolute paths of our app.
 				alias: {
 					$assets: path.resolve('./src/assets'),
-					$lib: path.resolve('./src/lib')
+					$lib: path.resolve('./src/lib'),
+					$components: path.resolve('./src/components'),
+					$styles: path.resolve('./src/styles')
 				}
 			}
 		})
