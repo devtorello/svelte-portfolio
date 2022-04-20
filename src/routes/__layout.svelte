@@ -10,11 +10,9 @@
     <nav>
         <ul class="desktop_menu">
             <li><a href="/"><span class="menu__contrast">01.</span> home</a></li>
-            <li><a href="/about"><span class="menu__contrast">02.</span> about</a></li>
-            <li><a href="/skills"><span class="menu__contrast">03.</span> skills</a></li>
-            <li><a href="/posts"><span class="menu__contrast">04.</span> posts</a></li>
-            <li><a href="/projects"><span class="menu__contrast">05.</span> projects</a></li>
-            <li><a href="/contact"><span class="menu__contrast">06.</span> contact</a></li>
+            <li><a href="/posts"><span class="menu__contrast">02.</span> posts</a></li>
+            <li><a href="/projects"><span class="menu__contrast">03.</span> projects</a></li>
+            <li><a href="/contact"><span class="menu__contrast">04.</span> contact</a></li>
         </ul>
     </nav>
     <button class="btn-mobile" on:click={toggleMobileMenu}>menu</button>
@@ -22,11 +20,9 @@
 
 <ul class="{mobileMenu ? "mobile-menu open" : "mobile-menu"}" id="mobile-menu">
     <li><a href="/" on:click={toggleMobileMenu}><span class="menu__contrast">01.</span> home</a></li>
-    <li><a href="/about" on:click={toggleMobileMenu}><span class="menu__contrast">02.</span> about</a></li>
-    <li><a href="/skills" on:click={toggleMobileMenu}><span class="menu__contrast">03.</span> skills</a></li>
-    <li><a href="/posts" on:click={toggleMobileMenu}><span class="menu__contrast">04.</span> posts</a></li>
-    <li><a href="/projects" on:click={toggleMobileMenu}><span class="menu__contrast">05.</span> projects</a></li>
-    <li><a href="/contact" on:click={toggleMobileMenu}><span class="menu__contrast">06.</span> contact</a></li>
+    <li><a href="/posts" on:click={toggleMobileMenu}><span class="menu__contrast">02.</span> posts</a></li>
+    <li><a href="/projects" on:click={toggleMobileMenu}><span class="menu__contrast">03.</span> projects</a></li>
+    <li><a href="/contact" on:click={toggleMobileMenu}><span class="menu__contrast">04.</span> contact</a></li>
 </ul>
 
 <slot></slot>
@@ -35,12 +31,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 
     :global(:root) {
-        --background-color: #0D0D0D;
-        --primary-color: #3E4759;
-        --secondary-color: #69788C;
-        --terciary-color: #949BA6;
-        --detail-color: #F2695C;
-        --default-color: #F2F2F2;
+        --background-color: #F2F0EB;
+        --primary-color: #6CD9B1;
+        --secondary-color: #7162D9;
+        --terciary-color: #503FBF;
+        --detail-color: #F277A4;
+        --default-color: #000000;
     }
 
     :global(body) {
