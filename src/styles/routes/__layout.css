@@ -11,7 +11,7 @@ header {
 
 .menu-title {
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 @media (max-width: 1280px) {
@@ -90,7 +90,7 @@ header {
     }
 
     .menu__contrast {
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
 
     a {
@@ -99,10 +99,10 @@ header {
     }
 
     a:hover {
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
 }
 
 .menu__contrast {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
